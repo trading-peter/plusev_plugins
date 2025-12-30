@@ -2,97 +2,129 @@
   "repoName": "Peter's PlusEV Plugins",
   "plugins": [
     {
-      "pluginId": "mql5-economic-calendar-import",
-      "name": "MQL5 Economic Calendar Import",
-      "appId": "plusev_planner",
-      "category": "Import",
-      "description": "Imports economic calendar events from MQL5",
-      "author": "trading-peter",
-      "version": "1.0.0",
-      "repository": "https://github.com/trading-peter/plusev_planner_economic_calendar_plugin",
-      "tags": [],
-      "contacts": [],
-      "resources": {
-        "allowedNetworkTargets": [
-          { "pattern": "https://www.mql5.com/en/economic-calendar/content/*" }
-        ],
-        "fsWriteAccess": {}
+      "meta": {
+        "pluginId": "mql5-economic-calendar-import",
+        "name": "MQL5 Economic Calendar Import",
+        "appId": "plusev_planner",
+        "category": "Import",
+        "description": "Imports economic calendar events from MQL5",
+        "author": "trading_peter",
+        "version": "v1.0.0",
+        "repository": "https://github.com/trading-peter/plusev_planner_economic_calendar_plugin",
+        "tags": [],
+        "contacts": [],
+        "resources": {
+          "allowedNetworkTargets": [
+            { "pattern": "https://www.mql5.com/en/economic-calendar/content/*" }
+          ],
+          "fsWriteAccess": {}
+        },
+        "features": []
       },
-      "features": []
-    },
-    {
-      "pluginId": "woox-datasource",
-      "name": "WooX Exchange",
-      "appId": "datasrc",
-      "category": "cex",
-      "description": "WooX Exchange data source - spot and futures markets",
-      "author": "PlusEV Team",
-      "version": "3.1.1",
-      "repository": "https://github.com/trading-peter/plusev_datasource_woox_plugin",
-      "tags": ["woox", "crypto", "exchange", "spot", "futures"],
-      "contacts": [
-        { "kind": "x.com", "value": "https://x.com/trading_peter" }
-      ],
-      "resources": {
-        "allowedNetworkTargets": [
-          { "pattern": "https://api.woox.io/*" },
-          { "pattern": "https://api.staging.woox.io/*" },
-          { "pattern": "https://api-pub.woox.io/*" },
-          { "pattern": "wss://wss.woox.io/*" },
-          { "pattern": "wss://wss.staging.woox.io/*" }
-        ],
-        "fsWriteAccess": {}
-      },
-      "features": []
-    },
-    {
-      "pluginId": "binance-datasource",
-      "name": "Binance Exchange",
-      "appId": "datasrc",
-      "category": "cex",
-      "description": "Binance Exchange data source - spot and futures markets",
-      "author": "PlusEV Team",
-      "version": "1.0.0",
-      "repository": "https://github.com/trading-peter/plusev_datasource_binance_plugin",
-      "tags": ["binance", "crypto", "exchange", "spot", "futures"],
-      "contacts": [
-        { "kind": "x.com", "value": "https://x.com/trading_peter" }
-      ],
-      "resources": {
-        "allowedNetworkTargets": [
-          { "pattern": "https://api.binance.com/*" },
-          { "pattern": "https://fapi.binance.com/*" },
-          { "pattern": "wss://fstream.binance.com/*" }
-        ],
-        "fsWriteAccess": {
-          "logs": "/logs"
+      "releases": [
+        {
+          "version": "v1.0.0",
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_planner_economic_calendar_plugin/raw/refs/tags/v2.0.1/plugin.wasm"
         }
-      },
-      "features": []
+      ]
     },
     {
-      "pluginId": "orderly-datasource",
-      "name": "Orderly Network",
-      "appId": "datasrc",
-      "category": "dex",
-      "description": "Orderly Network data source - perpetual futures markets",
-      "author": "PlusEV Team",
-      "version": "1.0.0",
-      "repository": "https://github.com/trading-peter/plusev_datasource_orderly_plugin",
-      "tags": ["orderly", "crypto", "exchange", "perpetual", "futures"],
-      "contacts": [
-        { "kind": "x.com", "value": "https://x.com/trading_peter" }
-      ],
-      "resources": {
-        "allowedNetworkTargets": [
-          { "pattern": "https://api.orderly.org/*" },
-          { "pattern": "https://testnet-api.orderly.org/*" },
-          { "pattern": "wss://ws-evm.orderly.org/*" },
-          { "pattern": "wss://testnet-ws-evm.orderly.org/*" }
+      "meta": {
+        "pluginId": "woox-datasource",
+        "name": "WooX Exchange",
+        "appId": "datasrc",
+        "category": "cex",
+        "description": "WooX Exchange data source - spot and futures markets",
+        "author": "trading_peter",
+        "version": "v1.0.0",
+        "repository": "https://github.com/trading-peter/plusev_datasource_woox_plugin",
+        "tags": ["woox", "crypto", "exchange", "spot", "futures"],
+        "contacts": [
+          { "kind": "x.com", "value": "https://x.com/trading_peter" }
         ],
-        "fsWriteAccess": {}
+        "resources": {
+          "allowedNetworkTargets": [
+            { "pattern": "https://api.woox.io/*" },
+            { "pattern": "https://api.staging.woox.io/*" },
+            { "pattern": "https://api-pub.woox.io/*" },
+            { "pattern": "wss://wss.woox.io/*" },
+            { "pattern": "wss://wss.staging.woox.io/*" }
+          ],
+          "fsWriteAccess": {}
+        },
+        "features": []
       },
-      "features": []
+      "releases": [
+        {
+          "version": "v1.0.0",
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_woox_plugin/raw/refs/tags/v1.0.0/plugin.wasm"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "pluginId": "binance-datasource",
+        "name": "Binance Exchange",
+        "appId": "datasrc",
+        "category": "cex",
+        "description": "Binance Exchange data source - spot and futures markets",
+        "author": "trading_peter",
+        "version": "v1.0.0",
+        "repository": "https://github.com/trading-peter/plusev_datasource_binance_plugin",
+        "tags": ["binance", "crypto", "exchange", "spot", "futures"],
+        "contacts": [
+          { "kind": "x.com", "value": "https://x.com/trading_peter" }
+        ],
+        "resources": {
+          "allowedNetworkTargets": [
+            { "pattern": "https://api.binance.com/*" },
+            { "pattern": "https://fapi.binance.com/*" },
+            { "pattern": "wss://fstream.binance.com/*" }
+          ],
+          "fsWriteAccess": {
+            "logs": "/logs"
+          }
+        },
+        "features": []
+      },
+      "releases": [
+        {
+          "version": "v1.0.0",
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_binance_plugin/raw/refs/tags/v1.0.0/plugin.wasm"
+        }
+      ]
+    },
+    {
+      "meta": {
+        "pluginId": "orderly-datasource",
+        "name": "Orderly Network",
+        "appId": "datasrc",
+        "category": "dex",
+        "description": "Orderly Network data source - perpetual futures markets",
+        "author": "trading_peter",
+        "version": "v1.0.0",
+        "repository": "https://github.com/trading-peter/plusev_datasource_orderly_plugin",
+        "tags": ["orderly", "crypto", "exchange", "perpetual", "futures"],
+        "contacts": [
+          { "kind": "x.com", "value": "https://x.com/trading_peter" }
+        ],
+        "resources": {
+          "allowedNetworkTargets": [
+            { "pattern": "https://api.orderly.org/*" },
+            { "pattern": "https://testnet-api.orderly.org/*" },
+            { "pattern": "wss://ws-evm.orderly.org/*" },
+            { "pattern": "wss://testnet-ws-evm.orderly.org/*" }
+          ],
+          "fsWriteAccess": {}
+        },
+        "features": []
+      },
+      "releases": [
+        {
+          "version": "v1.0.0",
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_orderly_plugin/raw/refs/tags/v1.0.0/plugin.wasm"
+        }
+      ]
     }
   ]
 }
