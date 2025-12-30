@@ -24,7 +24,7 @@
       "releases": [
         {
           "version": "v1.0.0",
-          "wasmInstallUrl": "https://github.com/trading-peter/plusev_planner_economic_calendar_plugin/raw/refs/tags/v2.0.1/plugin.wasm"
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_planner_economic_calendar_plugin/raw/refs/tags/v1.0.0/plugin.wasm"
         }
       ]
     },
