@@ -36,7 +36,7 @@
         "category": "cex",
         "description": "WooX Exchange data source - spot and futures markets",
         "author": "trading_peter",
-        "version": "v1.0.0",
+        "version": "v1.0.1",
         "repository": "https://github.com/trading-peter/plusev_datasource_woox_plugin",
         "tags": ["woox", "crypto", "exchange", "spot", "futures"],
         "contacts": [
