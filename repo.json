@@ -102,7 +102,7 @@
         "category": "dex",
         "description": "Orderly Network data source - perpetual futures markets",
         "author": "trading_peter",
-        "version": "v1.0.0",
+        "version": "v1.2.0",
         "repository": "https://github.com/trading-peter/plusev_datasource_orderly_plugin",
         "tags": ["orderly", "crypto", "exchange", "perpetual", "futures"],
         "contacts": [
@@ -120,6 +120,10 @@
         "features": []
       },
       "releases": [
+        {
+          "version": "v1.2.0",
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_orderly_plugin/raw/refs/tags/v1.2.0/plugin.wasm"
+        },
         {
           "version": "v1.0.0",
           "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_orderly_plugin/raw/refs/tags/v1.0.0/plugin.wasm"
