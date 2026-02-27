@@ -56,6 +56,10 @@
       },
       "releases": [
         {
+          "version": "v1.0.1",
+          "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_woox_plugin/raw/refs/tags/v1.0.1/plugin.wasm"
+        },
+        {
           "version": "v1.0.0",
           "wasmInstallUrl": "https://github.com/trading-peter/plusev_datasource_woox_plugin/raw/refs/tags/v1.0.0/plugin.wasm"
         }
